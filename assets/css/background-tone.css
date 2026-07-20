@@ -1,0 +1,13 @@
+:root {
+    --background: #ece8df;
+}
+
+.site-header {
+    background: rgba(236, 232, 223, 0.9);
+}
+
+.about-section .button-secondary,
+.about-section .button-secondary:hover,
+.about-section .button-secondary:focus-visible {
+    color: var(--text);
+}

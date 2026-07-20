@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr" class="intro-loading">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="SockStore ürün kataloğunu kategori, beden, renk ve kullanım alanına göre filtreleyin.">
+    <title>SockStore | Ürün Kataloğu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/background-tone.css?v=1">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/product-images.css?v=2">
+    <link rel="stylesheet" href="assets/css/catalog.css">
+    <link rel="stylesheet" href="assets/css/mobile-menu-fix.css">
+</head>
+<body>
+    <div class="page-intro" aria-hidden="true"><div class="intro-panel intro-panel-top"></div><div class="intro-panel intro-panel-bottom"></div><div class="intro-brand"><div class="intro-logo">Sock<span>Store</span></div><p>Ürün kataloğu</p><div class="intro-line"><span></span></div></div></div>
+    <header class="site-header"><div class="container header-inner"><a class="logo" href="index.html" aria-label="SockStore ana sayfa">Sock<span>Store</span></a><button class="menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span></button><nav id="main-navigation" class="main-navigation" aria-label="Ana menü"><a href="index.html">Ana Sayfa</a><a href="katalog.html" aria-current="page">Ürünler</a><a href="hakkimizda.html">Hakkımızda</a><a href="iletisim.html">İletişim</a></nav></div></header>
+    <main>
+        <section class="catalog-hero section-space"><div class="container catalog-hero-grid"><div><p class="eyebrow">SockStore koleksiyonu</p><h1>Tarzınıza uygun modeli bulun.</h1></div><p>Kategori, hedef kitle, beden, renk, materyal ve kullanım alanına göre filtreleyerek koleksiyonu inceleyin.</p></div></section>
+        <section class="catalog-section"><div class="container catalog-layout"><aside class="catalog-sidebar" aria-label="Ürün filtreleri"><div class="filter-panel-header"><div><p class="eyebrow">Filtreler</p><h2>Seçiminizi daraltın</h2></div><button id="clear-filters" class="clear-filter-button" type="button">Temizle</button></div><div class="filter-group"><label for="catalog-search">Ürün ara</label><input id="catalog-search" type="search" placeholder="Model veya ürün kodu..."></div><div class="filter-group"><label for="category-filter">Kategori</label><select id="category-filter"><option value="">Tüm kategoriler</option></select></div><div class="filter-group"><label for="audience-filter">Hedef kitle</label><select id="audience-filter"><option value="">Tümü</option></select></div><div class="filter-group"><label for="size-filter">Beden</label><select id="size-filter"><option value="">Tüm bedenler</option></select></div><div class="filter-group"><label for="color-filter">Renk</label><select id="color-filter"><option value="">Tüm renkler</option></select></div><div class="filter-group"><label for="material-filter">Materyal</label><select id="material-filter"><option value="">Tüm materyaller</option></select></div><div class="filter-group"><label for="usage-filter">Kullanım alanı</label><select id="usage-filter"><option value="">Tüm kullanım alanları</option></select></div><label class="badge-filter"><input id="featured-filter" type="checkbox"><span>Yalnızca yeni ve popüler modeller</span></label></aside><div class="catalog-content"><div class="catalog-toolbar"><div><strong id="result-count">0 ürün</strong><span>gösteriliyor</span></div><label class="sort-control"><span>Sırala</span><select id="sort-filter"><option value="default">Önerilen</option><option value="name-asc">İsme göre A-Z</option><option value="name-desc">İsme göre Z-A</option><option value="code-asc">Ürün koduna göre</option></select></label></div><div id="catalog-grid" class="product-grid catalog-grid" aria-live="polite"></div><div id="catalog-empty" class="catalog-empty" hidden><h3>Bu filtrelerle eşleşen ürün bulunamadı.</h3><p>Filtrelerden birini kaldırarak tekrar deneyin.</p></div></div></div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><a class="logo footer-logo" href="index.html">Sock<span>Store</span></a><p>© <span id="current-year"></span> SockStore. Tüm hakları saklıdır.</p></div></footer>
+    <script src="assets/js/catalog.js?v=2"></script><script src="assets/js/main.js"></script>
+</body>
+</html>

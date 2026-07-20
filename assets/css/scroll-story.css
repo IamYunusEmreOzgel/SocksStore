@@ -1,0 +1,307 @@
+/* SockStore scroll story */
+.story-section {
+    position: relative;
+    background: #11110f;
+    color: #fff;
+}
+
+.story-layout {
+    position: relative;
+    min-height: 500vh;
+}
+
+.story-stage {
+    position: sticky;
+    top: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+}
+
+.story-stage::before {
+    content: "SOCKSTORE";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(6rem, 19vw, 18rem);
+    font-weight: 800;
+    letter-spacing: -0.08em;
+    color: rgba(255, 255, 255, 0.035);
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.story-container {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: center;
+    gap: clamp(40px, 7vw, 110px);
+}
+
+.story-copy {
+    position: relative;
+    min-height: 300px;
+}
+
+.story-step {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(34px);
+    pointer-events: none;
+    transition: opacity 0.55s ease, transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.story-step.is-active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.story-number {
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.story-step h2 {
+    margin-top: 12px;
+    font-size: clamp(3rem, 7vw, 6.4rem);
+    line-height: 0.95;
+    letter-spacing: -0.065em;
+}
+
+.story-step p {
+    max-width: 560px;
+    margin-top: 24px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 1.05rem;
+}
+
+.story-visual {
+    position: relative;
+    min-height: min(68vh, 660px);
+    border-radius: 34px;
+    overflow: hidden;
+    background: #20201c;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
+    isolation: isolate;
+}
+
+.story-visual::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg, rgba(17, 17, 15, 0.26), transparent 45%),
+        linear-gradient(0deg, rgba(17, 17, 15, 0.32), transparent 48%);
+}
+
+.story-scene {
+    position: absolute;
+    inset: -5%;
+    opacity: 0;
+    transform: scale(1.12) translate3d(0, 18px, 0);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(0.88) contrast(1.04) brightness(0.86);
+    transition:
+        opacity 0.8s ease,
+        transform 1.25s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.8s ease;
+    will-change: opacity, transform;
+}
+
+.story-scene.is-active {
+    opacity: 1;
+    transform: scale(calc(1.04 + (var(--scene-progress, 0) * 0.025)))
+        translate3d(0, calc((0.5 - var(--scene-progress, 0)) * 18px), 0);
+    filter: saturate(1) contrast(1.04) brightness(0.94);
+}
+
+.scene-thread {
+    background-image: url("../images/products/story/iplik.jpg?v=3");
+    background-position: center;
+}
+
+.scene-knit {
+    background-image: url("../images/products/story/dokuma.jpg?v=3");
+    background-position: center;
+}
+
+.scene-dye {
+    background-image:
+        linear-gradient(rgba(21, 36, 56, 0.08), rgba(17, 17, 15, 0.16)),
+        url("../images/products/story/boyama.jpg?v=3");
+    background-blend-mode: multiply, normal;
+    background-position: center;
+}
+
+.scene-quality {
+    background-image: url("../images/products/story/kalite-kontrol.jpg?v=3");
+    background-position: center;
+}
+
+.scene-final {
+    background-image:
+        linear-gradient(135deg, rgba(240, 90, 60, 0.05), rgba(17, 17, 15, 0.06)),
+        url("../images/products/story/son-urun.jpg?v=3");
+    background-position: center;
+}
+
+.story-scene::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), transparent 42%);
+}
+
+.story-progress {
+    position: absolute;
+    right: max(24px, calc((100vw - var(--container)) / 2));
+    top: 50%;
+    z-index: 4;
+    transform: translateY(-50%);
+    display: grid;
+    gap: 12px;
+}
+
+.story-dot {
+    width: 9px;
+    height: 9px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.28);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.story-dot.is-active {
+    background: var(--accent);
+    transform: scale(1.55);
+}
+
+@media (max-width: 900px) {
+    .story-layout {
+        min-height: 500svh;
+    }
+
+    .story-stage {
+        min-height: 100svh;
+        padding: 78px 0 24px;
+        align-items: stretch;
+    }
+
+    .story-stage::before {
+        top: 42%;
+        font-size: clamp(5rem, 27vw, 9rem);
+    }
+
+    .story-container {
+        height: calc(100svh - 102px);
+        display: block;
+    }
+
+    .story-visual {
+        position: absolute;
+        inset: 0;
+        min-height: 0;
+        height: 100%;
+        border-radius: 26px;
+    }
+
+    .story-visual::after {
+        background:
+            linear-gradient(0deg, rgba(17, 17, 15, 0.94) 0%, rgba(17, 17, 15, 0.6) 34%, transparent 66%),
+            linear-gradient(90deg, rgba(17, 17, 15, 0.12), transparent 50%);
+    }
+
+    .story-copy {
+        position: absolute;
+        left: 22px;
+        right: 22px;
+        bottom: 34px;
+        z-index: 5;
+        min-height: 235px;
+    }
+
+    .story-step {
+        justify-content: flex-end;
+        transform: translateY(22px);
+    }
+
+    .story-step h2 {
+        font-size: clamp(3rem, 14vw, 4.8rem);
+    }
+
+    .story-step p {
+        margin-top: 16px;
+        max-width: 34rem;
+        font-size: 0.98rem;
+        color: rgba(255, 255, 255, 0.82);
+    }
+
+    .story-progress {
+        right: 50%;
+        top: auto;
+        bottom: 10px;
+        transform: translateX(50%);
+        display: flex;
+        gap: 10px;
+    }
+
+    .story-dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .story-stage {
+        padding-top: 72px;
+    }
+
+    .story-container {
+        height: calc(100svh - 92px);
+    }
+
+    .story-copy {
+        left: 18px;
+        right: 18px;
+        bottom: 30px;
+        min-height: 250px;
+    }
+
+    .story-step h2 {
+        font-size: clamp(2.8rem, 15vw, 4rem);
+    }
+
+    .story-step p {
+        font-size: 0.94rem;
+        line-height: 1.55;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .story-step,
+    .story-scene,
+    .story-dot {
+        transition: none;
+    }
+
+    .story-scene.is-active {
+        transform: scale(1.04);
+    }
+}

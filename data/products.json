@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "name": "Daily Comfort",
+    "code": "SS-101",
+    "category": "Günlük",
+    "audience": "Erkek",
+    "sizes": ["40-44"],
+    "material": "Pamuk",
+    "usage": "Günlük",
+    "description": "Yumuşak dokulu, sade tasarımlı ve gün boyu rahat kullanım sunan model.",
+    "badge": "Yeni",
+    "background": "#dce8ee",
+    "primaryColor": "#1c2630",
+    "images": [
+      "assets/images/products/Product1/ss101-front.jpg",
+      "assets/images/products/Product1/ss101-side.jpg",
+      "assets/images/products/Product1/ss101-detail.jpg",
+      "assets/images/products/Product1/ss101-package.jpg",
+      "assets/images/products/Product1/ss101-lifestyle.jpg"
+    ],
+    "colors": [
+      { "name": "Siyah", "hex": "#171717" },
+      { "name": "Gri", "hex": "#7d8083" },
+      { "name": "Lacivert", "hex": "#25324a" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Active Move",
+    "code": "SS-202",
+    "category": "Spor",
+    "audience": "Unisex",
+    "sizes": ["36-40", "40-44"],
+    "material": "Pamuk Karışımlı",
+    "usage": "Spor",
+    "description": "Hareketli kullanım için tasarlanmış, bileği destekleyen sportif model.",
+    "badge": "Popüler",
+    "background": "#eadfcd",
+    "primaryColor": "#f05a3c",
+    "images": [
+      "assets/images/products/Product1/ss101-front.jpg",
+      "assets/images/products/Product1/ss101-side.jpg",
+      "assets/images/products/Product1/ss101-detail.jpg",
+      "assets/images/products/Product1/ss101-package.jpg",
+      "assets/images/products/Product1/ss101-lifestyle.jpg"
+    ],
+    "colors": [
+      { "name": "Beyaz", "hex": "#f5f4ef" },
+      { "name": "Turuncu", "hex": "#f05a3c" },
+      { "name": "Siyah", "hex": "#171717" }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Classic Line",
+    "code": "SS-303",
+    "category": "Klasik",
+    "audience": "Erkek",
+    "sizes": ["40-44"],
+    "material": "Bambu",
+    "usage": "Ofis",
+    "description": "Ofis ve özel gün kombinlerine uyum sağlayan zamansız klasik model.",
+    "badge": "",
+    "background": "#ddd8d0",
+    "primaryColor": "#29302a",
+    "images": [
+      "assets/images/products/Product1/ss101-front.jpg",
+      "assets/images/products/Product1/ss101-side.jpg",
+      "assets/images/products/Product1/ss101-detail.jpg",
+      "assets/images/products/Product1/ss101-package.jpg",
+      "assets/images/products/Product1/ss101-lifestyle.jpg"
+    ],
+    "colors": [
+      { "name": "Antrasit", "hex": "#37393b" },
+      { "name": "Kahverengi", "hex": "#60483a" },
+      { "name": "Lacivert", "hex": "#25324a" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Color Blocks",
+    "code": "SS-404",
+    "category": "Desenli",
+    "audience": "Unisex",
+    "sizes": ["36-40", "40-44"],
+    "material": "Pamuk",
+    "usage": "Günlük",
+    "description": "Canlı renk geçişleri ve modern görünümüyle dikkat çeken desenli model.",
+    "badge": "Yeni",
+    "background": "#f1d5c8",
+    "primaryColor": "#9f3240",
+    "images": [
+      "assets/images/products/Product1/ss101-front.jpg",
+      "assets/images/products/Product1/ss101-side.jpg",
+      "assets/images/products/Product1/ss101-detail.jpg",
+      "assets/images/products/Product1/ss101-package.jpg",
+      "assets/images/products/Product1/ss101-lifestyle.jpg"
+    ],
+    "colors": [
+      { "name": "Bordo", "hex": "#9f3240" },
+      { "name": "Hardal", "hex": "#d69e2e" },
+      { "name": "Mavi", "hex": "#3c6e91" }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Soft Step",
+    "code": "SS-505",
+    "category": "Günlük",
+    "audience": "Kadın",
+    "sizes": ["36-40"],
+    "material": "Pamuk",
+    "usage": "Günlük",
+    "description": "Esnek yapısı ve yalın görünümüyle günlük kombinlere uyum sağlayan model.",
+    "badge": "",
+    "background": "#e4dcef",
+    "primaryColor": "#66558b",
+    "images": [
+      "assets/images/products/Product1/ss101-front.jpg",
+      "assets/images/products/Product1/ss101-side.jpg",
+      "assets/images/products/Product1/ss101-detail.jpg",
+      "assets/images/products/Product1/ss101-package.jpg",
+      "assets/images/products/Product1/ss101-lifestyle.jpg"
+    ],
+    "colors": [
+      { "name": "Mor", "hex": "#66558b" },
+      { "name": "Bej", "hex": "#c9b89d" },
+      { "name": "Pembe", "hex": "#cd8f9d" }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Run Crew",
+    "code": "SS-606",
+    "category": "Spor",
+    "audience": "Unisex",
+    "sizes": ["36-40", "40-44"],
+    "material": "Teknik Kumaş",
+    "usage": "Koşu",
+    "description": "Nefes alan yapısı ve dinamik stiliyle spor aktivitelerine uygun model.",
+    "badge": "",
+    "background": "#d8e7d6",
+    "primaryColor": "#386641",
+    "images": [
+      "assets/images/products/Product1/ss101-front.jpg",
+      "assets/images/products/Product1/ss101-side.jpg",
+      "assets/images/products/Product1/ss101-detail.jpg",
+      "assets/images/products/Product1/ss101-package.jpg",
+      "assets/images/products/Product1/ss101-lifestyle.jpg"
+    ],
+    "colors": [
+      { "name": "Yeşil", "hex": "#386641" },
+      { "name": "Beyaz", "hex": "#f5f4ef" },
+      { "name": "Siyah", "hex": "#171717" }
+    ]
+  }
+]

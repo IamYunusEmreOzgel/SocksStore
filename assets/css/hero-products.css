@@ -1,0 +1,70 @@
+/* Ana sayfa hero alanındaki gerçek ürün görselleri */
+.hero-product-card {
+    position: absolute;
+    overflow: hidden;
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow);
+    background: #d5e4f0;
+}
+
+.hero-product-card-large {
+    inset: 0 70px 40px 0;
+}
+
+.hero-product-card-small {
+    right: 0;
+    bottom: 0;
+    width: 48%;
+    height: 47%;
+    border: 10px solid var(--background);
+    border-radius: calc(var(--radius-large) + 4px);
+    background: #f4c7a8;
+}
+
+.hero-product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-product-card-small img {
+    object-position: center;
+}
+
+.hero-product-card-large,
+.hero-product-card-small {
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease;
+}
+
+.hero-visual:hover .hero-product-card-large {
+    transform: translateY(-4px) rotate(-0.4deg);
+}
+
+.hero-visual:hover .hero-product-card-small {
+    transform: translate(4px, -6px) rotate(1.2deg);
+}
+
+@media (max-width: 900px) {
+    .hero-product-card-large {
+        inset: 0 38px 28px 0;
+    }
+
+    .hero-product-card-small {
+        width: 46%;
+        height: 44%;
+        border-width: 8px;
+    }
+}
+
+@media (max-width: 560px) {
+    .hero-product-card-large {
+        inset: 0 24px 24px 0;
+    }
+
+    .hero-product-card-small {
+        width: 48%;
+        height: 42%;
+        border-width: 6px;
+    }
+}

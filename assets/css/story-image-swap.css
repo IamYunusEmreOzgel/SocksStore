@@ -1,0 +1,8 @@
+/* İplik ve dokuma aşamalarının görsellerini yer değiştirir */
+.scene-thread {
+    background-image: url("../images/products/story/dokuma.jpg?v=4");
+}
+
+.scene-knit {
+    background-image: url("../images/products/story/iplik.jpg?v=4");
+}

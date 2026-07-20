@@ -1,0 +1,38 @@
+@media (max-width: 900px) {
+    html.menu-open,
+    body.menu-open {
+        overflow: hidden;
+        overscroll-behavior: none;
+    }
+
+    /* Safari'de backdrop-filter, fixed menüyü header yüksekliğine sıkıştırabilir. */
+    .site-header,
+    .site-header.is-scrolled {
+        -webkit-backdrop-filter: none !important;
+        backdrop-filter: none !important;
+        background: rgba(247, 245, 239, 0.98);
+    }
+
+    .main-navigation {
+        top: 0 !important;
+        right: 0 !important;
+        bottom: auto !important;
+        left: 0 !important;
+        width: 100vw !important;
+        height: var(--mobile-viewport-height, 100dvh) !important;
+        min-height: var(--mobile-viewport-height, 100dvh) !important;
+        max-height: var(--mobile-viewport-height, 100dvh) !important;
+        padding-top: calc(88px + env(safe-area-inset-top)) !important;
+        padding-right: calc(22px + env(safe-area-inset-right)) !important;
+        padding-bottom: calc(28px + env(safe-area-inset-bottom)) !important;
+        padding-left: calc(22px + env(safe-area-inset-left)) !important;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .menu-toggle {
+        margin-right: env(safe-area-inset-right);
+    }
+}
